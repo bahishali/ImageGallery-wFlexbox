@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+        }
+        .header{
+            text-align:center;
+            padding:40px;
+
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+        .column{
+            flex:25%;
+            max-width:25%;
+            padding:0 5px;
+            
+        }
+        .column img{
+            margin-top:6px;
+            vertical-align:middle;
+            width:100%;
+        }
+
+        @@media screen and (max-width:800px){
+            .column{
+                flex:50%;
+                max-width:50%;
+            }
+             }
+        @@media screen and (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Image Gallery with Flexbox
+        </h1>
+        <p>
+            Let see the power of the Flexbox
+        </p>
+    </div>
+
+    <div class="row" >
+        <div class="column">
+            <img src="~/img/images/forest.jpeg" />
+            <img src="~/img/images/forest2.jpeg" />
+            <img src="~/img/images/forest3.jpeg" />
+            <img src="~/img/images/birds.jpeg" />
+        </div>
+        <div class="column">
+            <img src="~/img/images/sea.jpeg" />
+            <img src="~/img/images/spring.jpeg" />
+            <img src="~/img/images/spring2.jpeg" />
+            <img src="~/img/images/cappadocia.jpeg" />
+        </div>
+        <div class="column">
+            <img src="~/img/images/bridge.jpeg" />
+            <img src="~/img/images/bridge2.jpeg" />
+            <img src="~/img/images/building.jpeg" />
+            <img src="~/img/images/building2.jpeg" />
+        </div>
+        <div class="column">
+            <img src="~/img/images/lighthouse.jpeg" />
+            <img src="~/img/images/road.jpeg" />
+            <img src="~/img/images/people.jpeg" />
+            <img src="~/img/images/building.jpeg" />
+        </div>
+    </div>
+
+
+
+</body>
+</html>
